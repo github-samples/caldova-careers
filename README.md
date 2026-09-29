@@ -72,6 +72,8 @@ The starter intentionally leaves location labels off role cards while retaining 
 
 The only bundled skill is `.github/skills/quality-checks/SKILL.md`. The starter includes no custom agents or MCP server configuration: learners configure Playwright MCP in Copilot CLI and create the QA agent during the workshop. GitHub MCP is built into Copilot CLI and needs no repository server configuration.
 
+The `quality-checks` skill runs lint, type checking, and unit tests only, even for a general request to run tests and linters. Playwright E2E tests remain available separately and run in CI; browser observation with Playwright MCP is a later workshop exercise.
+
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for how to set up your environment, run the checks, and submit a pull request. This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
