@@ -21,6 +21,12 @@ This is the sample application for the **GitHub Copilot CLI** workshop. It's a d
 
 ## Getting started
 
+### GitHub Codespaces
+
+Create a repository from this template, then select **Code > Codespaces > Create codespace on main**. The devcontainer uses Node.js 24 and includes the GitHub CLI. During setup it installs project dependencies and Playwright Chromium, then applies the local database migrations. Wait for setup to finish, run `npm run dev`, and open forwarded port `4321` in your browser.
+
+### Local development
+
 ```bash
 npm install
 npm run dev
@@ -61,6 +67,12 @@ npm run dev
 This repository is a GitHub template. When you create a new repository from it, a one-time **Bootstrap issues** workflow (`.github/workflows/bootstrap-issues.yml`) runs automatically on the first push to `main` and opens a set of starter issues describing suggested first features. Each issue is defined by a Markdown file in `.github/bootstrap-issues/` — the first heading becomes the issue title and the remaining content becomes the body — so you can edit, add, or remove files there to control which issues are created.
 
 The workflow only runs on repositories created from the template (the `if: ${{ !github.event.repository.is_template }}` guard skips the template itself), and after creating the issues it removes itself and the `.github/bootstrap-issues/` folder in a cleanup commit so it never runs again.
+
+The starter intentionally leaves location labels off role cards while retaining location data and detail-page labels for the workshop warm-up. The **Filter roles by department and location** issue (`workshop:filtering`) starts the longer feature exercise. Filtering, the TSDoc instruction addition, the `quality-checks` skill's results formatting, and `.github/agents/qa.agent.md` are left for learners to implement.
+
+The only bundled skill is `.github/skills/quality-checks/SKILL.md`. The starter includes no custom agents or MCP server configuration: learners configure Playwright MCP in Copilot CLI and create the QA agent during the workshop. GitHub MCP is built into Copilot CLI and needs no repository server configuration.
+
+The `quality-checks` skill runs lint, type checking, and unit tests only, even for a general request to run tests and linters. Playwright E2E tests remain available separately and run in CI; browser observation with Playwright MCP is a later workshop exercise.
 
 ## Contributing
 

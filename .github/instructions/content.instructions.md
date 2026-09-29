@@ -20,8 +20,6 @@ Helpers in `src/lib/jobs.ts` should operate on plain `Job[]` arrays, not on `get
 
 Keep helper parameters and return values explicit. Helpers such as `sortByNewest`, `formatPostedDate`, filters, pagination, and derived values should be deterministic and easy to unit-test without the Astro runtime.
 
-Exercise 2 builds a departments helper. Derive the set of departments from `Job[]` in a pure `src/lib/departments.ts` helper rather than querying Astro or Drizzle from the helper.
-
 ## Types
 
 Use `src/types/job.ts` as the shared plain TypeScript model for role helpers and components. Avoid importing Astro content collection types into lower-level helpers unless a page-level adapter needs them.
