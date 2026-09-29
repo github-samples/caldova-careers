@@ -73,7 +73,7 @@ Before you can run and test the application locally, you'll need to install:
 
 ### Issues
 
-All change requests should start with an issue. You're welcome to file the issue alongside the PR, but an issue must always be created.
+Change requests should start with an issue. You're welcome to file the issue alongside the PR, but an issue is required except for the workshop's first location-label warm-up PR, which starts from a prompt. Normal feature PRs, including the workshop's department and location filtering feature, still require an issue.
 
 ### Workflow
 
