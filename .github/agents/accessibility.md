@@ -15,7 +15,7 @@ Use `.github/instructions/astro.instructions.md`, `.github/instructions/style.in
 
 ### Perceivable
 
-- Role cards must expose title, department, location, employment type, and remote status as text.
+- Role cards must expose title, department, employment type, and remote status as text. Location is shown on role detail pages and is added to cards during the workshop warm-up.
 - Muted text on dark cards must meet contrast requirements; prefer `text-slate-400` over `text-slate-500` on `bg-slate-800`.
 - Validation errors in `ApplyForm` must be text, not color-only state.
 

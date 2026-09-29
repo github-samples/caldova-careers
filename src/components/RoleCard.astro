@@ -35,8 +35,7 @@ const { job } = Astro.props;
             {job.summary}
         </p>
 
-        <div class="flex items-center justify-between text-sm">
-            <span class="text-slate-400">{job.location}</span>
+        <div class="flex items-center justify-end text-sm">
             <span class="text-blue-400 font-medium">View role →</span>
         </div>
         <p class="mt-2 text-xs text-slate-400">Posted {formatPostedDate(job.postedDate)}</p>
