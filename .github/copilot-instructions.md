@@ -66,7 +66,7 @@ Use the dark slate Caldova theme with Navy `#16234B`, Royal `#2E6CFC`, and Ice `
 
 ## Quality checks
 
-Run tests, linting, and type checking through the `.github/skills/quality-checks` skill guidance. Prefer targeted checks while working, then run the relevant full command before handing off.
+Use `.github/skills/quality-checks` for routine linting, type checking, and unit tests. General requests to run tests and linters must not add E2E tests to this routine. E2E tests remain available separately for explicit E2E requests and CI; see `.github/instructions/playwright.instructions.md`. Prefer targeted checks while working, then run the relevant full command before handing off.
 
 ## Agent notes
 

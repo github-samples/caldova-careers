@@ -27,6 +27,23 @@ test.describe('Open roles listing', () => {
         await expect(page.getByTestId('apply-form')).toBeVisible();
     });
 
+    for (const { title, location } of [
+        { title: 'Senior Frontend Engineer', location: 'Remote (US & Canada)' },
+        { title: 'Financial Analyst', location: 'Woodinville, WA, USA' },
+    ]) {
+        test(`keeps ${title} location on details, not starter cards`, async ({ page }) => {
+            await page.goto('/');
+            const card = page.getByTestId('role-card').filter({
+                has: page.getByRole('heading', { name: title, exact: true }),
+            });
+
+            await expect(card).toBeVisible();
+            await expect(card.getByText(location, { exact: true })).toHaveCount(0);
+            await card.click();
+            await expect(page.getByText(location, { exact: true })).toBeVisible();
+        });
+    }
+
     test('has no automatically detectable accessibility violations', async ({ page }) => {
         await page.goto('/');
         const results = await new AxeBuilder({ page })

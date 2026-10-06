@@ -29,4 +29,4 @@ Use `test.step()` for multi-stage flows so reports are readable. Keep specs focu
 
 ## Running tests
 
-Run e2e tests through the quality-checks skill guidance. Install Chromium with `npm run test:e2e:install` when the browser is missing.
+E2E tests are outside the routine `quality-checks` skill. Run `npm run test:e2e` separately when explicitly requested or in CI. Install Chromium with `npm run test:e2e:install` when the browser is missing.
