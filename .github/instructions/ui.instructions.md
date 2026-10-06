@@ -20,4 +20,4 @@ Add stable `data-testid` attributes to repeated or workflow-critical elements. G
 
 ## Role examples
 
-Role cards should communicate title, department, location, employment type, remote status, and summary without requiring hover. Apply forms should be simple and clear about which fields are required (name and email) versus optional.
+Role cards should communicate title, department, employment type, remote status, and summary without requiring hover. Location is already shown on role detail pages; adding it to cards is the workshop warm-up exercise. Apply forms should be simple and clear about which fields are required (name and email) versus optional.
