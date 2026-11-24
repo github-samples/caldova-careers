@@ -5,7 +5,7 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "containerEnv": {
-    "NPM_CONFIG_REGISTRY": "${localEnv:NPM_CONFIG_REGISTRY:https://registry.npmjs.org/}"
+    "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/"
   },
   "postCreateCommand": "npm ci && npx playwright install --with-deps chromium && npm run db:setup",
   "forwardPorts": [4321],
