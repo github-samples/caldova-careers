@@ -21,7 +21,7 @@ This is the sample application for the **GitHub Copilot CLI** workshop. It's a d
 
 ## Getting started
 
-Dependency lockfiles and cloud dependency operations use the [public npm registry](https://registry.npmjs.org/). GitHub Actions, coding-agent setup, and the devcontainer explicitly select it; Dependabot uses its default public npm registry.
+Dependency lockfiles and cloud dependency operations use the [public npm registry](https://registry.npmjs.org/). GitHub Actions and coding-agent setup explicitly select it; hosted devcontainers default to public npm, and Dependabot uses its default public npm registry.
 
 ### GitHub Codespaces
 
