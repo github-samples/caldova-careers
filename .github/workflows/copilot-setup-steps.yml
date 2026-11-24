@@ -3,6 +3,9 @@ name: Copilot Setup Steps
 on:
   workflow_dispatch:
 
+env:
+  NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
+
 jobs:
   copilot-setup-steps:
     runs-on: ubuntu-latest
