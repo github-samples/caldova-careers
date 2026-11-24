@@ -21,6 +21,8 @@ This is the sample application for the **GitHub Copilot CLI** workshop. It's a d
 
 ## Getting started
 
+Dependency lockfiles and hosted cloud dependency operations use the [public npm registry](https://registry.npmjs.org/). Hosted GitHub Actions and coding-agent setup explicitly select it; Dependabot uses its default public npm registry.
+
 ### GitHub Codespaces
 
 Create a repository from this template, then select **Code > Codespaces > Create codespace on main**. The devcontainer uses Node.js 24 and includes the GitHub CLI. During setup it installs project dependencies and Playwright Chromium, then applies the local database migrations. Wait for setup to finish, run `npm run dev`, and open forwarded port `4321` in your browser.

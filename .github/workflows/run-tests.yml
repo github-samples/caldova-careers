@@ -12,6 +12,7 @@ concurrency:
 
 env:
   ASTRO_TELEMETRY_DISABLED: 1
+  NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
 
 jobs:
   frontend-lint:
