@@ -21,10 +21,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.12",
-    "@astrojs/node": "^11.1.12",
+    "@astrojs/node": "^11.1.14",
     "@libsql/client": "^0.18.0",
     "@tailwindcss/vite": "^4.3.5",
-    "astro": "^7.4.12",
+    "astro": "^7.4.13",
     "drizzle-orm": "^0.45.4",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "zod": "^4.6.7"
@@ -42,7 +42,7 @@
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
     "typescript-eslint": "^8.73.0",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.1"
   },
   "overrides": {
     "@esbuild-kit/core-utils": {
